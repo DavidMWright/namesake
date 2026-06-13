@@ -77,6 +77,7 @@ const pageTitle = Astro.url.pathname === "/" ? title : `${title} · Namesake`;
       title="Namesake"
       href={new URL("rss.xml", Astro.site)}
     />
+    <link href="/src/styles/print.css" media="print" rel="stylesheet" />
     <script is:inline async defer src="https://embeds.every.org/0.4/button.js"
     ></script>
   </head>
